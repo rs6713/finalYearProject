@@ -1,0 +1,5 @@
+The main thing is presumably that AATAAT is symmetric. Indeed (AA^T)^T=(A^T)^TA^T=AA^T(AA^T)^T=(A^T)^TA^T=AA^T. 
+For symmetric matrices one has the Spectral Theorem which says that we have a basis of eigenvectors and every eigenvalue is real.
+A(BC)=(AB)C
+AB =/= BA (can be true )
+If A is an n×nn×n matrix such that AB=BAfor all n×n matrices B, then A=cI for some constant c.
