@@ -3,7 +3,9 @@
 
 close all; clear; clc;
 
+%%create array of feature .mat files, that can go through
 feaFile = '../data/viper_lomo.mat';
+
 
 numClass = 632;
 numFolds = 10;
@@ -13,7 +15,7 @@ numRanks = 100;
 load(feaFile, 'descriptors');
 galFea = descriptors(1 : numClass, :);
 probFea = descriptors(numClass + 1 : end, :);
-clear descriptors
+%%clear descriptors
 
 %% set the seed of the random stream. The results reported in our CVPR 2015 paper are achieved by setting seed = 0. 
 seed = 0;
@@ -63,6 +65,10 @@ end
 
 meanCms = mean(cms);
 plot(1 : numRanks, meanCms);
+
+csvwrite(csvFileName,m)
+type csvlist.dat
+
 
 fprintf('The average performance:\n');
 fprintf(' Rank1,  Rank5, Rank10, Rank15, Rank20\n');

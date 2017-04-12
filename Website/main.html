@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- use latest rendering engine-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Set width to page width, zoom level equals one-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Image Description Capture</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Image Description Capture</h1>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+          <img src="assets/css/images/gt_002.png" width="100%">
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-4 col-xs-4">
+        </div>
+      </div>
+      <p>
+        Please describe the person in the picture naturally, as if you were describing them to
+        someone who has never met them before, in order to identify them in a crowd.
+      </p>
+      <form role = "form">
+         <div class = "form-group">
+            <!--<label for = "name">Person Description</label>-->
+            <textarea name="description" rows="3" class="form-control" placeholder="Image Description" required></textarea>
+            <br>
+            <div class="text-right"> 
+              <button type="submit" class="btn btn-success btn-lg">Submit</button>
+            </div>
+         </div>     
+      </form>
+     <!-- 
+      <div class="input-group input-group-lg">
+        <textarea name="description" rows="5" class="form-control" placeholder="Image Description" required></textarea>
+       
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </span>
+      </div>
+      Do you want to filter, based on input contents? Has to be full?
+      Captcha? Disable button till valid submission?
+      <a href="#" class="btn btn-default btn-lg disabled" role="button">Link</a>
+      -->
+      
+    </div>
+  </div>
+  <!-- Load securely in external bootstrap and jquery libraries-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
+  

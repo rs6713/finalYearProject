@@ -1,0 +1,15 @@
+{
+  "name": "@becks/image-descriptor-server",
+  "version": "1.0.0",
+  "description": "Server to handle data being sent to database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "becks",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
